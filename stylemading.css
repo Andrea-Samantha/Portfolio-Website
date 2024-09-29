@@ -1,0 +1,98 @@
+body {
+    /* background-image: url('Background\ image\ 2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color:rgb(255, 211, 236);
+}
+
+h1 {
+    font-family: 'Micro 5', 'Lucida Console', 'Courier New', Verdana, Arial, Helvetica;
+    line-height: 80%;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    text-shadow: -4px -4px rgb(146, 42, 92), 4px 4px rgb(146, 42, 92), -4px 4px rgb(146, 42, 92), 4px -4px rgb(146, 42, 92); 
+    /* text-shadow: -4px -4px rgb(255, 255, 255), 4px 4px rgb(255, 255, 255), -4px 4px rgb(255, 255, 255), 4px -4px rgb(255, 255, 255); */
+}
+
+#home {
+    font-family: 'Lucida Console', Verdana, Helvetica, Geneva, Tahoma, sans-serif;
+    color:rgb(146, 42, 92);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.img-container {
+    display: flex;
+    column-gap: 3%;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3%;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: 3%;
+}
+
+img {
+    width: 100%;
+    border: 2px solid rgb(255, 230, 252);
+    /* box-shadow: 10px 10px rgb(89, 25, 78); */
+}
+
+
+/*Style untuk responsive layout*/
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column1 {
+        margin: 0;
+        align-items: center;
+        margin: 0 0 7% 0;
+    }
+
+    .column2 {
+        margin: 0;
+        align-items: center;
+        margin: 0 0 7% 0;
+    }
+
+    .column3 {
+        margin: 0;
+        align-items: center;
+        margin: 0 0 7% 0;
+    }
+
+    img {
+        width: 90%;
+    }
+}

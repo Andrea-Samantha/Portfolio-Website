@@ -1,0 +1,70 @@
+body {
+    /* background-image: url('Background\ image\ 2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+    background-color:rgb(255, 211, 236);
+}
+
+h1 {
+    font-family: 'Micro 5', 'Lucida Console', 'Courier New', Verdana, Arial, Helvetica;
+    line-height: 80%;
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 4px;
+    text-shadow: -4px -4px rgb(146, 42, 92), 4px 4px rgb(146, 42, 92), -4px 4px rgb(146, 42, 92), 4px -4px rgb(146, 42, 92); 
+    /* text-shadow: -4px -4px rgb(255, 255, 255), 4px 4px rgb(255, 255, 255), -4px 4px rgb(255, 255, 255), 4px -4px rgb(255, 255, 255); */
+}
+
+#home {
+    font-family: 'Lucida Console', Verdana, Helvetica, Geneva, Tahoma, sans-serif;
+    color:rgb(146, 42, 92);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#embed {
+    width: 90%;
+    height: 65rem;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 1%;
+}
+
+
+
+/* .row1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+} */
+
+
+/*Style untuk responsive layout*/
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    #embed {
+        height: 45rem;
+        border-radius: 2%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #embed {
+        height: 35rem;
+        border-radius: 3%;
+    }
+}
