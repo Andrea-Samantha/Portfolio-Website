@@ -93,7 +93,7 @@ html, body {
     background-color: rgb(89, 25, 78);
     color:rgb(255, 255, 255);
     border: none;
-    font-family: 'Lucida Console', 'Courier New', Verdana, Arial, Helvetica;
+    font-family: 'Lucida Console', Verdana, Helvetica, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     padding: 10px 50px;
     margin: 5px 60px;
@@ -108,6 +108,10 @@ button:hover {
 
 /*Style untuk responsive layout*/
 @media only screen and (max-width: 768px) {
+    body {
+        background-position: center;
+    }
+
     #title {
         font-size: 23vw;
         padding-left: 1.5rem;
@@ -150,5 +154,19 @@ button:hover {
         font-size: 7vw;
         line-height: 20%;
         border: 3px solid rgb(89, 25, 78);
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #title {
+        font-size: 22vw;
+        letter-spacing: 0.6rem;
+        padding-left: 1.3rem;
+        text-shadow: -4px -4px rgb(89, 25, 78), 4px 4px rgb(89, 25, 78), -4px 4px rgb(89, 25, 78), 4px -4px rgb(89, 25, 78);
+    }
+
+    .nav {
+        font-size: 0.9rem;
     }
 }
