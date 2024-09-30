@@ -90,12 +90,16 @@ html, body {
 }
 
 .nav {
+    width: 200px;
     background-color: rgb(89, 25, 78);
     color:rgb(255, 255, 255);
     border: none;
-    font-family: 'Lucida Console', Verdana, Helvetica, Geneva, Tahoma, sans-serif;
+    font-family: 'Source Code Pro', 'Lucida Console', Verdana, Helvetica, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
-    padding: 10px 50px;
+    /* padding: 10px 50px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     margin: 5px 60px;
     cursor: pointer;
     transition: 0.4s ease;
@@ -139,7 +143,8 @@ button:hover {
 
 @media only screen and (max-width: 719px) {
     .nav {
-        padding: 10px 25%;
+        /* padding: 10px 25%; */
+        width: 60%;
     }
 }
 
